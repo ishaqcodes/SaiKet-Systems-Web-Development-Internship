@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e3e6e6;
+    /* Amazon background color */
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.border {
+    border: 1.5px solid transparent;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+/* Logo */
+.nav-logo h1 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Location */
+.add-first {
+    font-size: 0.75rem;
+    color: #cccccc;
+    margin-left: 15px;
+}
+
+.add-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    height: 40px;
+    border-radius: 4px;
+    margin: 0 20px;
+    background-color: white;
+}
+
+.search-bar:hover {
+    box-shadow: 0 0 5px 2px #f3a847;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #cdcdcd;
+    color: #0f1111;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd69;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+/* Cart */
+.cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+#cart-count {
+    color: #f08804;
+    font-size: 1rem;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    /* Default Image agar JS fail ho */
+    background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1999&auto=format&fit=crop');
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 95%;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-msg a {
+    color: #007185;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* --- CONTENT BOXES --- */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e3e6e6;
+    margin-top: -20px;
+    /* Overlap effect like Amazon */
+    padding: 20px;
+    gap: 20px;
+    z-index: 10;
+}
+
+.box {
+    height: 400px;
+    width: 23%;
+    /* 4 cards per row */
+    background-color: white;
+    padding: 20px 0 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.box-img {
+    height: 300px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.box a {
+    font-size: 0.85rem;
+    color: #007185;
+    text-decoration: none;
+}
+
+/* --- FOOTER --- */
+.panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.panel1:hover {
+    background-color: #485769;
+}
+
+.panel2 {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.panel2 ul {
+    list-style: none;
+}
+
+.panel2 ul p {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.panel2 ul a {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.panel2 ul a:hover {
+    text-decoration: underline;
+}
+
+.panel3 {
+    background-color: #232f3e;
+    border-top: 0.5px solid #3a4553;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel3 .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.panel4 {
+    background-color: #131a22;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.pages a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 900px) {
+    .box {
+        width: 45%;
+        /* Tablet: 2 cards per row */
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Navbar Tweaks */
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .search-bar {
+        order: 3;
+        /* Search bar niche aayegi */
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .location {
+        display: none;
+        /* Mobile pe location hide kar di taaki clutter na ho */
+    }
+
+    /* Cards */
+    .box {
+        width: 100%;
+        /* Mobile: 1 card per row */
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .box-img {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* Content Margin */
+    .content {
+        margin-top: 0;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    /* Footer Responsive Fix */
+    .panel2 {
+        flex-direction: column;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .panel2 ul {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+}
